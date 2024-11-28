@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+/* 전체 컨테이너 */
+.typetest-container {
+  font-family: "D2coding", "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* 화면 전체 높이 */
+  background-image: url("../../images/typeTest/background-test.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* 중앙 박스 */
+.center-box {
+  margin-top: 6%;
+  width: 65%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 3px solid rgb(255, 215, 0);
+  padding: 20px 40px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 나는 어떤 유형의 개발자일까? 어울리는 언어 추천까지! */
+.start-title {
+  font-size: 24px;
+  margin-bottom: 180px;
+}
+
+/* START 버튼 */
+.test-start-button {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: rgba(45, 45, 45, 0.8);
+  color: white;
+  border: solid 1px white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* 테스트 부분 */
+.text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* 질문 */
+.test-title {
+  font-size: 22px;
+  margin-bottom: 100px;
+}
+
+/* 선택지 A B */
+.options-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* 선택지 A */
+.option-button-A {
+  width: 600px;
+  display: inline-block;
+  padding: 10px 20px; /* 버튼 내부 여백 */
+  font-size: 17px; /* 텍스트 크기 */
+  color: #a42f6a; /* 텍스트 색상 */
+  background-color: #ececec; /* 버튼 배경 색상 */
+  border: 2px solid #a42f6a; /* 버튼 테두리 색상 */
+  border-radius: 50px; /* 버튼 테두리 둥글게 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  font-weight: bold; /* 텍스트 굵기 */
+  cursor: pointer; /* 커서 모양 변경 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+
+  &:hover {
+    background-color: #a42f6a; /* 호버 시 배경 색상 */
+    color: #ececec; /* 호버 시 텍스트 색상 */
+  }
+}
+
+/* 선택지 B */
+.option-button-B {
+  width: 600px;
+  display: inline-block;
+  padding: 10px 20px; /* 버튼 내부 여백 */
+  font-size: 17px; /* 텍스트 크기 */
+  color: #015907; /* 텍스트 색상 */
+  background-color: #ececec; /* 버튼 배경 색상 */
+  border: 2px solid #015907; /* 버튼 테두리 색상 */
+  border-radius: 50px; /* 버튼 테두리 둥글게 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  font-weight: bold; /* 텍스트 굵기 */
+  cursor: pointer; /* 커서 모양 변경 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+
+  &:hover {
+    background-color: #015907; /* 호버 시 배경 색상 */
+    color: #ececec; /* 호버 시 텍스트 색상 */
+  }
+}
+
+/* 결과 부분 */
+.result-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+}
+
+/* 당신의 개발자 유형은? */
+.result-title {
+  font-size: 25px;
+}
+
+.result-image {
+  border-radius: 10px;
+}
+
+.result-name {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 30px;
+  color: rgb(237, 195, 137);
+}
+
+.result-description {
+  font-size: 20px;
+}
